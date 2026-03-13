@@ -1,0 +1,117 @@
+/* ===== HALAMAN KELOLA TUGAS ===== */
+
+body{
+background:#f3f4f6;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ===== JUDUL HALAMAN ===== */
+
+.title{
+display:block;
+width:100%;
+text-align:center;
+font-size:30px;
+font-weight:700;
+margin-top:40px;
+margin-bottom:30px;
+color:#111827;
+}
+
+/* Judul */
+
+.title{
+width:100%;
+text-align:center;
+font-size:30px;
+font-weight:700;
+margin-top:40px;
+margin-bottom:30px;
+}
+
+/* Container card */
+
+.tugas-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,300px);
+justify-content:center;
+gap:25px;
+padding-bottom:40px;
+}
+
+/* Card tugas */
+
+.tugas-card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+display:flex;
+flex-direction:column;
+}
+
+.tugas-card:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.tugas-card h3{
+color:#1e40af;
+margin-bottom:10px;
+border-bottom:2px solid #3b82f6;
+padding-bottom:6px;
+}
+
+/* Deskripsi */
+
+.tugas-card p{
+font-size:14px;
+color:#374151;
+margin-bottom:10px;
+}
+
+/* Deadline */
+
+.deadline{
+background:#ef4444;
+color:white;
+padding:6px;
+border-radius:6px;
+font-size:12px;
+text-align:center;
+margin-bottom:10px;
+font-weight:bold;
+}
+
+/* Mahasiswa */
+
+.nim{
+font-size:13px;
+color:#4b5563;
+margin-bottom:10px;
+}
+
+/* Tombol */
+
+.btn-group{
+margin-top:auto;
+display:flex;
+gap:6px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:6px 10px;
+border-radius:6px;
+font-size:12px;
+text-decoration:none;
+color:white;
+}
+
+.nilai{background:#10b981;}
+.komentar{background:#3b82f6;}
+.edit{background:#f59e0b;}
+.hapus{background:#ef4444;}
+

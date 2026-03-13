@@ -1,0 +1,118 @@
+ /* =================== */
+ /* TUGAS MAHASISWA RAPI */
+.tugas-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px; /* card lebih rapat */
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.tugas-card{
+    background: #ffffff;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.tugas-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Judul Tugas */
+.tugas-card h3{
+    color: #1e40af; /* biru gelap lebih menarik */
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+/* Deskripsi */
+.tugas-card p{
+    color: #374151;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    text-align: justify; /* lebih rapi */
+}
+
+/* Deadline */
+.deadline{
+    background: #ef4444;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    font-weight:bold;
+    font-size:0.85rem;
+    text-align:center;
+    margin-bottom: 12px;
+}
+
+/* Form Upload */
+.tugas-card form{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:auto; /* dorong ke bawah card */
+}
+
+.tugas-card input[type="file"]{
+    padding:5px;
+}
+
+/* Tombol Upload */
+.upload-btn{
+    background: #3b82f6;
+    color:white;
+    padding:8px 14px;
+    border-radius:6px;
+    font-size:0.9rem;
+    font-weight:600;
+    cursor:pointer;
+    border:none;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.upload-btn:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+.upload-btn:disabled{
+    background:#9ca3af;
+    cursor:not-allowed;
+    transform:none;
+}
+
+/* File sebelumnya */
+.tugas-card p.file-info{
+    font-size:0.85rem;
+    color:#4b5563;
+    margin-top:8px;
+    word-break: break-word;
+}
+
+/* Responsive kecil */
+@media(max-width:500px){
+    .tugas-container{
+        gap:10px;
+    }
+    .tugas-card{
+        padding:15px;
+    }
+    .tugas-card h3{
+        font-size:1.15rem;
+    }
+    .tugas-card p{
+        font-size:0.9rem;
+    }
+}
